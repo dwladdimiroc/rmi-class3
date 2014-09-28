@@ -19,6 +19,6 @@ import java.util.ArrayList;
 
 public interface Interface extends Remote {
     
-    public boolean ingresarUsuario(String usuario) throws RemoteException;
-    public ArrayList<String> verUsuarios() throws RemoteException;
+    public void enviarMensaje(int opcion) throws RemoteException;
+    public String mensajeBroadcast() throws RemoteException;
 }
